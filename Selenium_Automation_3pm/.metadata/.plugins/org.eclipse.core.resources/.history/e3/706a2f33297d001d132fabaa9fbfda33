@@ -1,0 +1,25 @@
+package webDriver;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+//org is domain name
+//openqa is open source
+//selenium is project name
+//chrome is folder name
+//ChromeDriver is class name
+
+public class ToUseCloseMethod {
+
+	public static void main(String[] args) throws InterruptedException {
+		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
+		WebDriver driver=new ChromeDriver();
+		driver.get("https://demo.actitime.com/login.do");
+		
+driver.findElement(By.linkText("actiTIME Inc.")).click();
+Thread.sleep(3000);
+driver.close();
+//only parent browser will get closed where driver is present
+	}
+
+}
