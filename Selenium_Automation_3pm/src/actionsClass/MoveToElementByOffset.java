@@ -24,7 +24,6 @@ public class MoveToElementByOffset {
 		action.moveToElement(rating1, 100, 0).perform();
 		//Coordinate extension for chrome can be used to get the x axis or y axis value
 		//100 is x axis value for 3 stars or it is the difference between 1 star and 3 star x axis values
-		//0 is the y axis value 
-		
+		//0 is the y axis value 	
 }
 }
